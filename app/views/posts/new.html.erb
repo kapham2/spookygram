@@ -1,0 +1,11 @@
+<h1>Spookygram</h1>
+
+<%= form_for(@post) do |f| %>
+  <label>Image URL</label><br>
+  <%= f.text_field :img_url %><br>
+
+  <label>Caption</label><br>
+  <%= f.text_field :caption %><br>
+
+  <%= f.submit %>
+<% end %>
