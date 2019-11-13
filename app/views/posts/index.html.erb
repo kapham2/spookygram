@@ -1,7 +1,7 @@
 <h2>All Spookygrams</h2>
 
 <% @posts.each do |post| %>
-    <%= image_tag(post.img_url) %><br>
+    <%= image_tag(post.img_url, class: "post-img") %><br>
     <%= post.caption %><br>
     <br>
 <% end %>
