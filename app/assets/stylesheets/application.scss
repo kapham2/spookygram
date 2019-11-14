@@ -17,12 +17,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background-color: #f8f8f8;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+}
+
 .navbar-container {
   width: 640px;
   margin: 0 auto;
 }
 
 .container {
-    width: 640px;
-    margin: 0 auto;
+  width: 640px;
+  margin: 0 auto;
 }
