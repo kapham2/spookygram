@@ -1,0 +1,11 @@
+<h2>Show Spookygram</h2>
+
+<%= content_tag(:div, class: "card") do %>
+    <%= content_tag(:div, class: "card-body") do %>
+        <h4>Kim</h4>
+    <% end %>
+    <%= image_tag(@post.img_url, class: "card-img") %>
+    <%= content_tag(:div, @post.caption, class: "card-body") %>
+<% end %>
+<br>
+<br>
