@@ -5,7 +5,7 @@
         <%= content_tag(:div, class: "card-body") do %>
             <h4>Kim</h4>
         <% end %>
-        <%= image_tag(post.img_url, class: "card-img") %>
+        <%= link_to image_tag(post.img_url, class: "card-img"), post_path(post) %>
         <%= content_tag(:div, post.caption, class: "card-body") %>
     <% end %>
     <br>
