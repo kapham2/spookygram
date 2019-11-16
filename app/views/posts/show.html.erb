@@ -2,7 +2,7 @@
 
 <%= content_tag(:div, class: "card") do %>
     <%= content_tag(:div, class: "card-body") do %>
-        <h4>Kim</h4>
+        <h4><%= link_to("Edit", edit_post_path(@post) ) %></h4>
     <% end %>
     <%= image_tag(@post.img_url, class: "card-img") %>
     <%= content_tag(:div, @post.caption, class: "card-body") %>
