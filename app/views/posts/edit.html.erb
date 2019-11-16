@@ -1,0 +1,16 @@
+<h2>Edit Spookygram</h2>
+
+<%= content_tag(:div, class: "form-wrapper") do %>
+  <%= image_tag(@post.img_url, class: "card-img") %><br><br>
+  <%= form_for(@post) do |f| %>
+    <%= content_tag(:div, class: "form-group") do %>
+      <label>Image URL</label><br>
+      <%= f.text_field :img_url, class: "form-control" %><br>
+
+      <label>Caption</label><br>
+      <%= f.text_field :caption, class: "form-control" %><br>
+
+      <%= f.submit class: "btn btn-success" %>
+    <% end %>
+  <% end %>
+<% end %>
