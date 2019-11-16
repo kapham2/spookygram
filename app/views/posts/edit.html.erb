@@ -1,7 +1,12 @@
 <h2>Edit Spookygram</h2>
 
+<%= content_tag(:div, class: "card") do %>
+    <%= content_tag(:div, class: "card-body") do %>
+        <h4><%= link_to("Cancel", post_path(@post) ) %></h4>
+    <% end %>
+  <%= image_tag(@post.img_url, class: "card-img") %>
+<% end %>
 <%= content_tag(:div, class: "form-wrapper") do %>
-  <%= image_tag(@post.img_url, class: "card-img") %><br><br>
   <%= form_for(@post) do |f| %>
     <%= content_tag(:div, class: "form-group") do %>
       <label>Image URL</label><br>
